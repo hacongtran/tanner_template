@@ -1,0 +1,161 @@
+/*------------------------------------------------------------
+title
+------------------------------------------------------------*/
+
+
+/*
+------------------------------------------------------------*/
+.c-title1 {
+    font-size: 4.9rem;
+    font-weight: 700;
+    letter-spacing: 11.5px;
+    word-spacing: 2px;
+    @include pp {
+        font-size: 4rem;
+    }
+    @include tab2 {
+        font-size: 3.3rem;
+        letter-spacing: 7px;
+    }
+    @include tab {
+        font-size: 3rem;
+        letter-spacing: 4px;
+    }
+    @include sp {
+        letter-spacing: 2px;
+    }
+    @include mobile {
+        font-size: 2.8rem;
+    }
+    @include min {
+        font-size: 2.6rem;
+    }
+
+    &--black {
+        color: var(--black1-color);
+        text-shadow: -1px 0 5px $white-color;
+        @include tab2 {
+            text-shadow: unset;
+        }
+    }
+
+    &--white {
+        color: var(--white-color);
+    }
+}
+
+.c-subtitle1 {
+    font-size: 2.1rem;
+    letter-spacing: 0.4px;
+    color: var(--text-color);
+    @include pp {
+        font-size: 1.9rem;
+    }
+    @include sp {
+        font-size: 1.8rem;
+    }
+    @include mobile {
+        font-weight: 500;
+        letter-spacing: 0;
+        font-size: 1.6rem;
+    }
+
+    &--white {
+        color: var(--white-color);
+    }
+}
+
+
+.c-title2__container {
+    overflow: hidden;
+}
+
+.c-title2 {
+    text-align: center;
+    @include inline;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+
+    .c-title2__text {
+        font-weight: 700;
+        letter-spacing: 16.6px;
+        font-size: 6rem;
+        transform: translateX(16.6px);
+        color: var(--text-color);
+        @include large {
+            font-size: 5.5rem;
+            letter-spacing: 8px;
+            transform: unset;
+        }
+        @include tab {
+            font-size: 4.2rem;
+        }
+        @include sp {
+            font-size: 3.7rem;
+            letter-spacing: 4px;
+        }
+        @include mobile {
+            font-size: 3.2rem;
+            letter-spacing: 2px;
+        }
+        @include mobile2 {
+            font-size: 2.6rem;
+            letter-spacing: 1px;
+        }
+    }
+
+    .c-title2--sub {
+        align-self: flex-end;
+        margin-top: 19px;
+        font-size: 2.2rem;
+        letter-spacing: -0.2px;
+        color: var(--text-color);
+        white-space: nowrap;
+        line-height: 1;
+        padding: 5px 3px 4px;
+        position: relative;
+        z-index: 3;
+        @include tab {
+            font-size: 1.8rem;
+            letter-spacing: 0;
+        }
+        @include sp {
+            margin-top: 10px;
+            font-size: 1.6rem;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: calc(200% + 65px);
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: rgba(184, 164, 126, 0.42);
+            z-index: -1;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            right: calc(100% + 12px);
+            width: 137px;
+            top: calc(50% + 3px);
+            transform: translateY(-50%);
+            height: 2px;
+            background-color: var(--black1-color);
+            @include sp {
+                width: 100px;
+            }
+            @include mobile {
+                width: 70px;
+            }
+        }
+    }
+}
+
+
+
+

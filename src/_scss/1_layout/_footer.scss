@@ -1,0 +1,232 @@
+/*------------------------------------------------------------
+footer
+------------------------------------------------------------*/
+.c-footer {
+    background-color: #b8a47e63;
+
+    .l-container {
+        max-width: 1778px;
+    }
+
+    .c-footer__top {
+        @include inline;
+        padding-top: 38px;
+        padding-bottom: 5px;
+        padding-right: 12px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include large {
+            padding-right: 0;
+        }
+        @include sp {
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .c-footer__logo {
+            width: 155px;
+            flex-shrink: 0;
+        }
+
+        .c-footer__address {
+            font-family: var(--roboto-font);
+            font-size: 1.5rem;
+            margin-top: 12px;
+            margin-right: 6.8%;
+            @include pp1775 {
+                margin-right: 0;
+            }
+            @include pp {
+                margin-left: auto;
+                margin-right: 5%;
+            }
+            @include sp {
+                margin-left: 0;
+                margin-right: 0;
+                padding-left: 40px;    
+            }
+
+            .c-footer__company {
+                font-weight: 500;
+                font-size: 1.5rem;
+                word-spacing: -0.2px;
+            }
+
+            p.c-address {
+                font-weight: 100;
+                font-size: 1.5rem;
+                line-height: 1.33;
+                color: #383838;
+
+            }
+        }
+
+        .c-footer__menu {
+            margin-top: 12px;
+            transform: translateX(8.2%);
+            @include pp1775 {
+                transform: unset;
+            }
+            @include large {
+                padding-right: 20px;
+                padding-left: 50px;
+            }
+            @include pp {
+                width: 100%;
+                order: 5;
+                transform: translateY(-39px);
+                padding-right: 0;
+                padding-left: 20px;
+            }
+            @include tab {
+                max-width: max-content;
+            }
+            @include sp {
+                order: unset;
+                transform: unset;
+                max-width: 100%;
+                padding-left: 40px;
+            }
+            
+            .c-menu__links {
+                @include pp {
+                    max-width: 440px;
+                }
+                @include sp {
+                    max-width: 100%;
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                    flex-direction: column;
+                    flex-wrap: wrap;    
+                }
+
+                .c-menu__link {
+                    height: fit-content;
+                    color: #919191;
+
+                    @include pp1900 {
+                        &:nth-child(2) {
+                            transform: translateX(-5px);
+                        }
+
+                        &:nth-child(3) {
+                            transform: translateX(-1px);
+                        }
+
+                        &:nth-child(4) {
+                            transform: translateX(-2px);
+                        }
+
+                        &:nth-child(5) {
+                            transform: translateX(1px);
+                        }
+                    }
+
+                    &.c-active,
+                    &:hover {
+                        color: var(--black1-color);
+                    }
+
+                    +.c-menu__link {
+                        margin-left: 74px;
+                        @include large {
+                            margin-left: 45px;
+                        }
+                        @include sp {
+                            margin-left: 0;
+                            margin-top: 20px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+
+    .c-footer__bottom {
+        @include inline;
+        padding-bottom: 18px;
+        @include sp {
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+
+        .c-copy__right {
+            font-size: 1.5rem;
+            font-weight: 100;
+            font-family: var(--roboto-font);
+            @include tab {
+                font-size: 1.4rem;
+            }
+            @include sp {
+                order: 3;
+                width: 100%;
+                text-align: center;
+            }
+            
+        }
+
+        .c-footer__socials {
+            margin-left: 7.9%;
+            @include sp {
+                width: 100%;
+                margin-left: 0;
+                margin-bottom: 15px;
+                padding-left: 40px;    
+
+            }
+
+            .c-menu__links {
+                @include inline;
+                @include sp {
+                    flex-direction: column;
+                }
+
+                .c-menu__link {
+                    font-weight: 100;
+                    letter-spacing: 0.3px;
+                    display: inline-block;
+                    text-align: center;
+                    letter-spacing: -0.3px;
+                    @include sp {
+                        width: max-content;
+                    }
+
+                    + .c-menu__link {
+                        margin-left: 82.5px;
+                        @include tab {
+                            margin-left: 45px;
+                        }
+                        @include sp {
+                            margin-left: 0;
+                            margin-top: 20px;
+                        }
+                    }
+
+                    &::before {
+                        top: calc(50% + 2px);
+                    }
+
+                    &::after {
+                        top: calc(50% + 1px);
+                        left: calc(100% + 8px);
+                    }
+
+                    span {
+                        display: block;
+                        font-weight: 700;
+                        height: 0;
+                        overflow: hidden;
+                        visibility: hidden;
+                    }
+
+                    &.c-active,
+                    &:hover {
+                        font-weight: 700;
+                    }    
+                }
+            }
+        }
+    }
+}

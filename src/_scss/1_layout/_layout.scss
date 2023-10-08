@@ -1,0 +1,120 @@
+/* layout
+------------------------------------------------------------*/
+body {
+    font-family: var(--main-font);
+    font-size: 1.4rem;
+    line-height: 1.5;
+    @include sp {
+        min-width: 320px;
+    }
+}
+//-------------------------------------------------------
+
+
+//-------------------------------------------------------
+.l-container {
+    max-width: $base-width;
+    margin: 0 auto;
+    padding: 0 25px;
+    @include tab {
+        padding: 0 3%;
+    }
+    @include sp {
+        padding: 0 3.5%;
+    }
+}
+
+.l-container2 {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+//-------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes arrow {
+    0% {
+        transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    49.9% {
+        transform: translateX(50%);
+        transform: translateX(50%);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateX(-50%);
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+        top: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 0;
+        top: calc(100% - 10px);
+    }
+}

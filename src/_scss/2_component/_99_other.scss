@@ -1,0 +1,154 @@
+/*------------------------------------------------------------
+other
+------------------------------------------------------------*/
+@keyframes bounceRight {
+    0% { transform: translateX(0%); }
+    15% { transform: translateX(-35%); }
+    30% { transform: translateX(30%); }
+    45% { transform: translateX(-25%); }
+    60% { transform: translateX(20%); }
+    75% { transform: translateX(15%); }
+    100% { transform: translateX(10%); }
+}
+
+
+
+.c-show--up {
+    opacity: 0;
+    transition: 800ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: 800ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-property: opacity, transform, -webkit-transform;
+    transform: scale(0) translate3d(0, 1rem, 0) rotate(0.00001deg);
+    transform: scale(0) translate3d(0, 1rem, 0) rotate(0.00001deg);
+}
+
+.c-show--up.show {
+    opacity: 1;
+    transform: scale(1) translate3d(0, 0, 0) rotate(0.001deg);
+    transform: scale(1) translate3d(0, 0, 0) rotate(0.001deg);
+}
+
+.fadetxt {
+    opacity: 0;
+}
+
+.fadetxt span {
+    opacity: 0;
+}
+
+.cover,
+.cover_gray {
+    position: relative;
+}
+
+.cover::after,
+.cover_gray::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    height: 103%;
+    top: -1%;
+    left: 0;
+    transition-property: width;
+    transition-property: width;
+    transition-property: width;
+    transition-duration: 1.4s;
+    transition-duration: 1.4s;
+    transition-duration: 1.4s;
+    transition-delay: 0.4s;
+    transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+
+.cover_gray::after {
+    background: #f7f8f9;
+}
+
+.cover.show::after,
+.cover_gray.show::after {
+    width: 0;
+}
+
+.fade_list li,
+.fade {
+    opacity: 0;
+    transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    transition-property: opacity;
+    transition-property: opacity;
+    transition-property: opacity;
+}
+
+.fade_list li.show,
+.fade.show {
+    opacity: 1;
+}
+
+.fade-up {
+    opacity: 0;
+    transform: translate(0, 50px);
+    transform: translate(0, 50px);
+    transform: translate(0, 50px);
+    transition-duration: 1.5s;
+    transition-duration: 1.5s;
+    transition-duration: 1.5s;
+    transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+}
+
+.fade-up2,
+.fade-up3,
+.fade-up4,
+.fade-up5,
+.fade-up6 {
+    opacity: 0;
+    transform: translate(0, 50px);
+    transform: translate(0, 50px);
+    transform: translate(0, 50px);
+    transition-duration: 1.2s;
+    transition-duration: 1.2s;
+    transition-duration: 1.2s;
+    transition-delay: 0.5s;
+    transition-delay: 0.5s;
+    transition-delay: 0.5s;
+    transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: opacity, -webkit-transform;
+    transition-property: transform, opacity;
+    transition-property: transform, opacity, -webkit-transform;
+}
+
+.fade-up.show,
+.fade-up2.show,
+.fade-up3.show,
+.fade-up4.show,
+.fade-up5.show,
+.fade-up6.show {
+    opacity: 1;
+    transform: translate(0, 0);
+    transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+/*
+------------------------------------------------------------*/
+
+
